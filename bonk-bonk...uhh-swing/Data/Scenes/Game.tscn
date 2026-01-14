@@ -16,6 +16,10 @@ background_mode = 2
 sky = SubResource("Sky_u6ov3")
 tonemap_mode = 2
 glow_enabled = true
+adjustment_enabled = true
+adjustment_brightness = 1.1
+adjustment_contrast = 1.15
+adjustment_saturation = 1.15
 
 [sub_resource type="CylinderMesh" id="CylinderMesh_oth1b"]
 top_radius = 10.0
@@ -36,7 +40,7 @@ shadow_enabled = true
 [node name="Map" type="StaticBody3D" parent="."]
 
 [node name="Mesh" type="MeshInstance3D" parent="Map"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.99575174, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 mesh = SubResource("CylinderMesh_oth1b")
 
 [node name="Collision" type="CollisionShape3D" parent="Map"]
