@@ -3,15 +3,16 @@ extends CharacterBody3D
 
 @onready var camera: Camera3D = $Camera3D
 
-@export var sensitivity : float = 0.002
-@export var rotation_speed : float = 2
+@export var sensitivity : float = 0.006
+@export var rotation_speed : float = 4
 
 
-const SPEED : float = 10.0
+const SPEED : float = 15.0
 const JUMP_VELOCITY : float = 4.5
 const FRICTION : float = 0.8
 const MAX_COYOTE_TIME : float = 0.1
 const MAX_BUFFER_JUMP : float = 0.1
+
 var coyote_time : float = 0.0
 var buffer_jump : float = 0.0
 var vel : Vector2

@@ -12,8 +12,15 @@ config_version=5
 
 config/name="BonkBonk...uhh SWING"
 run/main_scene="uid://bfqbt1qxnn60l"
-config/features=PackedStringArray("4.5", "Forward Plus")
+config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://Assets/Textures/icon.svg"
+
+[display]
+
+window/size/viewport_width=320
+window/size/viewport_height=180
+window/size/mode=3
+window/stretch/mode="viewport"
 
 [input]
 
@@ -77,5 +84,6 @@ common/physics_interpolation=true
 
 [rendering]
 
+textures/canvas_textures/default_texture_filter=0
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
