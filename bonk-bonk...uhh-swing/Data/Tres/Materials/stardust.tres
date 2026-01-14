@@ -1,0 +1,22 @@
+[gd_resource type="ShaderMaterial" load_steps=3 format=3 uid="uid://bww2njihxtfpe"]
+
+[ext_resource type="Shader" uid="uid://kxe02gdoma6e" path="res://Data/Tres/overlay.gdshader" id="1_j2r2e"]
+[ext_resource type="Texture2D" uid="uid://bnmmn8ibxltr6" path="res://Assets/Textures/stardust.png" id="2_rqksh"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_j2r2e")
+shader_parameter/overlay_albedo = ExtResource("2_rqksh")
+shader_parameter/texture_albedo = ExtResource("2_rqksh")
+shader_parameter/albedo_texture_size = Vector2i(128, 128)
+shader_parameter/point_size = 0.0
+shader_parameter/uv1_blend_sharpness = 1.0
+shader_parameter/uv2_blend_sharpness = 1.0
+shader_parameter/uv1_scale = Vector3(0.1, 0.1, 0.1)
+shader_parameter/uv1_offset = Vector3(0, 0, 0)
+shader_parameter/uv2_scale = Vector3(0.025, 0.025, 0.025)
+shader_parameter/uv2_offset = Vector3(0, 0, 0)
+shader_parameter/uv1_movement = Vector3(0.01, 0.01, 0.01)
+shader_parameter/uv2_movement = Vector3(0.003, 0.003, 0.003)
+shader_parameter/uv1_movement_stepping = 128.0
+shader_parameter/uv2_movement_stepping = 64.0
